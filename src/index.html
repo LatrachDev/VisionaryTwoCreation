@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visionary Creations</title>
     <script src="../tailwind.js"></script>
+    <style>
+      #mobile-menu {
+        display: none;
+      }
+      @media (max-width: 768px) {
+
+        #desktop-menu {
+          display: none;
+        }
+      }
+    </style>
 </head>
 <body>
     <!-- Start About Section -->
@@ -42,5 +53,257 @@
         </div>
     </section>    
     <!-- End Awesome Work Section -->
+   <!-- Header Section -->
+   <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#">
+              <img src="../imgs/logo.png" alt="Logo" class="h-10">
+            </a>
+          </div>
+
+          <!-- Hamburger Icon for Mobile Menu -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop -->
+          <nav id="desktop-menu" class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-red-500 font-medium">About</a>
+            <a href="#service" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
+            <a href="#portfolio" class="text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium">Team</a>
+            <a href="#testimonial" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
+            <a href="#contact" class="text-red-500 font-bold">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Mobile -->
+        <nav id="mobile-menu" class="md:hidden">
+          <div class="space-y-1 p-4">
+            <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
+            <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
+            <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
+            <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+            <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
+            <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+            <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+            <a href="#contact" class="block text-red-500 font-bold">Contact</a>
+          </div>
+        </nav>
+      </div>
+   </header>
+<!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center" style="background-image: url('../imgs/header.jpg');">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+    <p class="text-lg md:text-2xl mt-4">Small Team With Big Ideas</p>
+    <h1 class="text-4xl md:text-6xl font-bold">Visionary Creations</h1>
+    <div class="mt-8 space-x-4">
+      <a href="#service" class="px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Our Services</a>
+      <a href="#contact" class="px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-red-600">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+        <!-- Start Services -->
+        <section class="container lg:w-9/12 mx-auto">
+            <div class="text-center mb-7"><!-- Services Header-->
+                <h4 class="font-thin text-gray-400">Makes Happen</h4>
+                <h1 class="font-bold text-3xl text-gray-700 pb-7">Our Services</h1>
+            </div>
+            <div class="grid md:grid-cols-4 gap-2 "><!-- Services content container -->
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/1.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">corporis assumenda</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/2.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Debitis amet</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/3.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Libero temporibus</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/4.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Perspiciatis explicabo</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/5.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Poluptatum</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/6.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Nihil dicta</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/7.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Repellendus maxime</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+                <div class="bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- Box  -->
+                    <div>
+                        <img class="mb-8" src="/icons/8.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-3 font-bold">Sint vitae</h2>
+                    <p class="pb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Debitis amet saepe et!
+                    </p>
+                </div>
+    
+    
+            </div>
+        </section>
+        <!-- End Services -->
+
+        <!-- Start blog section -->
+        <section class="container lg:w-9/12 mx-auto">
+            <div class="text-center mb-7"><!-- Services Header-->
+                <h4 class="font-thin text-gray-400">News Feeds</h4>
+                <h1 class="font-bold text-3xl text-gray-700 pb-7">Our Blog</h1>
+            </div>
+            <div class="flex items-center justify-center container mx-auto"><!-- blog parent -->
+                <div class="grid grid-cls-1 gap-5 md:grid-cols-3"> <!-- grid -->
+                    <div class="flex flex-col bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- single box -->
+                        <img class="w-auto rounded" src="../imgs/blog-1.jpg" alt="blog">
+                        <div class="flex justify-center mt-5 mb-5">
+                            <img src="../icons/b1.svg" alt="chat icon">
+                            <span class="ml-3">123</span>
+                            <div class="ml-5 mr-5"></div>
+                            <img src="../icons/b2.svg" alt="eye icon">
+                            <span class="ml-3">123</span>
+                        </div>
+                        <h2 class="font-bold text-2xl text-gray-600 mb-5">
+                            Possimusaliquam veniam
+                        </h2>
+                        <p class="text-gray-500 tracking-wide mb-5">
+                            Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipisicing elit.
+                            Repudiandae laudantium
+                            dolor nisi obcaecati, non
+                            laboriosam asperiores
+                            doloremque tempora
+                            repellendus iure!
+                        </p>
+                        <a class="text-red-600 tracking-wide text-xl" href="#" >Read More...</a>
+                    </div>
+                    <div class="flex flex-col bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- single box -->
+                        <img class="w-auto rounded" src="../imgs/blog-2.jpg" alt="blog">
+                        <div class="flex justify-center mt-5 mb-5">
+                            <img src="../icons/b1.svg" alt="chat icon">
+                            <span class="ml-3">434</span>
+                            <div class="ml-5 mr-5"></div>
+                            <img src="../icons/b2.svg" alt="eye icon">
+                            <span class="ml-3">987</span>
+                        </div>
+                        <h2 class="font-bold text-2xl text-gray-600 mb-5">
+                            Repudiandae laudantium
+                        </h2>
+                        <p class="text-gray-500 tracking-wide mb-5">
+                            Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipisicing elit.
+                            Repudiandae laudantium
+                            dolor nisi obcaecati, non
+                            laboriosam asperiores
+                            doloremque tempora
+                            repellendus iure!
+                        </p>
+                        <a class="text-red-600 tracking-wide text-xl" href="#" >Read More...</a>
+                    </div>
+                    <div class="flex flex-col bg-white rounded border shadow-xl  p-5 mb-8  ml-2 mr-2"><!-- single box -->
+                        <img class="w-auto rounded" src="../imgs/blog-3.jpg" alt="blog">
+                        <div class="flex justify-center mt-5 mb-5">
+                            <img src="../icons/b1.svg" alt="chat icon">
+                            <span class="ml-3">164</span>
+                            <div class="ml-5 mr-5"></div>
+                            <img src="../icons/b2.svg" alt="eye icon">
+                            <span class="ml-3">425</span>
+                        </div>
+                        <h2 class="font-bold text-2xl text-gray-600 mb-5">
+                            Laboriosam asperiores
+                        </h2>
+                        <p class="text-gray-500 tracking-wide mb-5">
+                            Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipisicing elit.
+                            Repudiandae laudantium
+                            dolor nisi obcaecati, non
+                            laboriosam asperiores
+                            doloremque tempora
+                            repellendus iure!
+                        </p>
+                        <a class="text-red-600 tracking-wide text-xl" href="#" >Read More...</a>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- End blog section -->
+
+
+
+
+
 </body>
 </html>
