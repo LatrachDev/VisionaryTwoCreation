@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visionary Creations</title>
     <script src="../tailwind.js"></script>
     <style>
@@ -10,78 +10,75 @@
         display: none;
       }
       @media (max-width: 768px) {
-
         #desktop-menu {
           display: none;
         }
       }
     </style>
-</head>
-<body>
-    <!-- Start About Section -->
-    <section id="about" class="container sm:flex shadow-lg text-center w-9/12 mx-auto p-5 mt-10">
-        <div class="aboutSection">
-            <img class="mx-auto my-5" src="../icons/UxUi-Icon.svg" alt="Icon representing Ux/Ui Design">
-            <h3 class="font-bold text-lg mb-5">Ux/Ui Design</h3>
-            <p class="mx-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem adipisci, tenetur obcaecati commodi eveniet.</p>
-        </div>
-
-        <div class="aboutSection">
-            <img class="mx-auto my-5" src="../icons/webDev-Icon.svg" alt="Icon representing Web Development">
-            <h3 class="font-bold text-lg mb-5">Web Development</h3>
-            <p class="mx-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem adipisci, tenetur obcaecati commodi eveniet.</p>
-        </div>
-        
-        <div class="aboutSection">
-            <img class="mx-auto my-5" src="../icons/appDesign-Icon.svg" alt="Icon representing App Design">
-            <h3 class="font-bold text-lg mb-5">App Design</h3>
-            <p class="mx-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem adipisci, tenetur obcaecati commodi eveniet.</p>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Start Awesome Work Section -->
-    <section class="container p-5 mx-auto sm:flex mt-20 md:w-9/12 ">
-        <div class="contents sm:w-6/12">
-            <img class="mx-auto my-auto w-9/12 sm:w-5/12 md:w-6/12 md:h-64 object-cover" src="../imgs/about.jpg" alt="An image showcasing our work">
-        </div>
-        <div class="w-9/12 mx-auto sm:w-6/12">
-            <h3 class="text-xl font-light my-5 pl-0 sm:pl-5">We Create <br> <span class="font-bold text-2xl">Awesome Work</span></h3>
-            <p class="my-5 pl-0 sm:pl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta maiores nisi fuga aspernatur porro.</p>
-            <p class="my-5 pl-0 sm:pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aut culpa sunt sequi sed officiis.</p>
-            <p class="my-5 pl-0 sm:pl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque similique officia?</p>
-        </div>
-    </section>    
-    <!-- End Awesome Work Section -->
-   <!-- Header Section -->
-   <header class="bg-white shadow-md">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <!-- Logo -->
-          <div class="flex-shrink-0">
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
             <a href="#">
-              <img src="../imgs/logo.png" alt="Logo" class="h-10">
+              <img src="../imgs/logo.png" alt="Logo" class="h-10" />
             </a>
           </div>
 
           <!-- Hamburger Icon for Mobile Menu -->
           <div class="md:hidden">
             <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
               </svg>
             </button>
           </div>
 
           <!-- Desktop -->
           <nav id="desktop-menu" class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
-            <a href="#about" class="text-gray-700 hover:text-red-500 font-medium">About</a>
-            <a href="#service" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
-            <a href="#portfolio" class="text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
-            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium">Team</a>
-            <a href="#testimonial" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
-            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
+            <a href="#" class="text-gray-700 hover:text-red-500 font-medium"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-red-500 font-medium"
+              >About</a
+            >
+            <a
+              href="#service"
+              class="text-gray-700 hover:text-red-500 font-medium"
+              >Service</a
+            >
+            <a
+              href="#portfolio"
+              class="text-gray-700 hover:text-red-500 font-medium"
+              >Portfolio</a
+            >
+            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium"
+              >Team</a
+            >
+            <a
+              href="#testimonial"
+              class="text-gray-700 hover:text-red-500 font-medium"
+              >Testimonial</a
+            >
+            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium"
+              >Blog</a
+            >
             <a href="#contact" class="text-red-500 font-bold">Contact</a>
           </nav>
         </div>
@@ -89,67 +86,589 @@
         <!-- Mobile -->
         <nav id="mobile-menu" class="md:hidden">
           <div class="space-y-1 p-4">
-            <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
-            <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
-            <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
-            <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
-            <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
-            <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
-            <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >About</a
+            >
+            <a
+              href="#service"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Service</a
+            >
+            <a
+              href="#portfolio"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Portfolio</a
+            >
+            <a
+              href="#team"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Team</a
+            >
+            <a
+              href="#testimonial"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Testimonial</a
+            >
+            <a
+              href="#blog"
+              class="block text-gray-700 hover:text-red-500 font-medium"
+              >Blog</a
+            >
             <a href="#contact" class="block text-red-500 font-bold">Contact</a>
           </div>
         </nav>
       </div>
-   </header>
-<!-- Hero Section -->
-<section class="relative h-screen bg-cover bg-center" style="background-image: url('../imgs/header.jpg');">
-  <div class="absolute inset-0 bg-black opacity-50"></div>
-  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-    <p class="text-lg md:text-2xl mt-4">Small Team With Big Ideas</p>
-    <h1 class="text-4xl md:text-6xl font-bold">Visionary Creations</h1>
-    <div class="mt-8 space-x-4">
-      <a href="#service" class="px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Our Services</a>
-      <a href="#contact" class="px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-red-600">Contact Us</a>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('../imgs/header.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white"
+      >
+        <p class="text-lg md:text-2xl mt-4">Small Team With Big Ideas</p>
+        <h1 class="text-4xl md:text-6xl font-bold">Visionary Creations</h1>
+        <div class="mt-8 space-x-4">
+          <a
+            href="#service"
+            class="px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600"
+            >Our Services</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-red-600"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start About Section -->
+    <section
+      id="about"
+      class="container sm:flex shadow-lg text-center w-9/12 mx-auto p-5 mt-10"
+    >
+      <div class="aboutSection">
+        <img
+          class="mx-auto my-5"
+          src="../icons/UxUi-Icon.svg"
+          alt="Icon representing Ux/Ui Design"
+        />
+        <h3 class="font-bold text-lg mb-5">Ux/Ui Design</h3>
+        <p class="mx-4 font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          quidem adipisci, tenetur obcaecati commodi eveniet.
+        </p>
+      </div>
+
+      <div class="aboutSection">
+        <img
+          class="mx-auto my-5"
+          src="../icons/webDev-Icon.svg"
+          alt="Icon representing Web Development"
+        />
+        <h3 class="font-bold text-lg mb-5">Web Development</h3>
+        <p class="mx-4 font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          quidem adipisci, tenetur obcaecati commodi eveniet.
+        </p>
+      </div>
+
+      <div class="aboutSection">
+        <img
+          class="mx-auto my-5"
+          src="../icons/appDesign-Icon.svg"
+          alt="Icon representing App Design"
+        />
+        <h3 class="font-bold text-lg mb-5">App Design</h3>
+        <p class="mx-4 font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          quidem adipisci, tenetur obcaecati commodi eveniet.
+        </p>
+      </div>
+    </section>
+    <!-- End About Section -->
+    
+    <!-- Start Awesome Work Section -->
+    <section class="container p-5 mx-auto sm:flex mt-20 md:w-9/12">
+      <div class="contents sm:w-6/12">
+        <img
+          class="mx-auto my-auto w-9/12 sm:w-5/12 md:w-6/12 md:h-64 object-cover"
+          src="../imgs/about.jpg"
+          alt="An image showcasing our work"
+        />
+      </div>
+      <div class="w-9/12 mx-auto sm:w-6/12">
+        <h3 class="text-xl font-light my-5 pl-0 sm:pl-5">
+          We Create <br />
+          <span class="font-bold text-2xl">Awesome Work</span>
+        </h3>
+        <p class="my-5 pl-0 sm:pl-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta
+          maiores nisi fuga aspernatur porro.
+        </p>
+        <p class="my-5 pl-0 sm:pl-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aut
+          culpa sunt sequi sed officiis.
+        </p>
+        <p class="my-5 pl-0 sm:pl-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+          doloremque similique officia?
+        </p>
+      </div>
+    </section>
+    <!-- End Awesome Work Section -->
+
+    <!-- Start what others Section -->
+     
+    <!-- End what others Section -->
+
+    <!-- Start Services -->
+    <section class="container lg:w-9/12 mx-auto">
+      <div class="text-center mb-7">
+        <!-- Services Header-->
+        <h4 class="font-thin text-gray-400">Makes Happen</h4>
+        <h1 class="font-bold text-3xl text-gray-700 pb-7">Our Services</h1>
+      </div>
+      <div class="grid md:grid-cols-4 gap-2">
+        <!-- Services content container -->
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/1.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">corporis assumenda</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/2.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Debitis amet</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/3.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Libero temporibus</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/4.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Perspiciatis explicabo</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/5.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Poluptatum</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/6.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Nihil dicta</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/7.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Repellendus maxime</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+
+        <div class="bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2">
+          <!-- Box  -->
+          <div>
+            <img class="mb-8" src="/icons/8.svg" alt="icon" />
+          </div>
+          <h2 class="mb-3 font-bold">Sint vitae</h2>
+          <p class="pb-6 text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            amet saepe et!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start portfolio Section -->
+    <section class="container lg:w-9/12 mx-auto text-center">
+      <h2 class="text-gray-700 text-sm">Our Awesome Works</h2>
+      <h1 class="text-3xl font-bold mb-6">Our Portfolio</h1>
+  
+      <div class="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 p-5 mx-auto mt-20">
+        <!-- Image 1 -->
+        <div class="w-full col-span-1 relative overflow-hidden">
+          <img src="../imgs/folio-1.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-lg">
+          <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+                <div class="text-white text-xl font-bold mb-4">Image Title 1</div>
+                <div class="flex space-x-4">
+                  <!-- Magnifying Glass Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+                    </img>
+                  </a>
+                  <!-- Link Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+                    </img>
+                  </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Image 2 -->
+        <div class="w-full col-span-1 relative">
+            <img src="../imgs/folio-3.jpg" alt="Image 2" class="w-full h-auto object-cover rounded-lg">
+            <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+                <div class="text-white text-xl font-bold mb-4">Image Title 2</div>
+                <div class="flex space-x-4">
+                  <!-- Magnifying Glass Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+                    </img>
+                  </a>
+                  <!-- Link Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+                    </img>
+                  </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="w-full col-span-1 relative">
+            <img src="../imgs/folio-5.jpg" alt="Image 3" class="w-full h-auto object-cover rounded-lg">
+            <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+                <div class="text-white text-xl font-bold mb-4">Image Title 3</div>
+                <div class="flex space-x-4">
+                  <!-- Magnifying Glass Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+                    </img>
+                  </a>
+                  <!-- Link Icon -->
+                  <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                    <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+                    </img>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full col-span-1 relative">
+          <img src="../imgs/folio-2.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-lg -mt-11">
+          <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+              <div class="text-white text-xl font-bold mb-4">Image Title 1</div>
+              <div class="flex space-x-4">
+                <!-- Magnifying Glass Icon -->
+                <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                  <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+                  </img>
+                </a>
+                <!-- Link Icon -->
+                <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                  <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+                  </img>
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="w-full col-span-1 relative -mt-28">
+        <img src="../imgs/folio-4.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-lg ">
+        <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+            <div class="text-white text-xl font-bold mb-4">Image Title 1</div>
+            <div class="flex space-x-4">
+              <!-- Magnifying Glass Icon -->
+              <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+                </img>
+              </a>
+              <!-- Link Icon -->
+              <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+                <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+                </img>
+              </a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-
-<section class="py-12">
-  <!-- Header -->
-  <div class="text-center mb-10">
-      <h3 class="text-lg font-medium text-gray-500">Our Awesome Works</h3>
-      <h1 class="text-4xl font-bold text-gray-800">Our Portfolio</h1>
-  </div>
-
-  <!-- Portfolio Grid -->
-  <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Portfolio Item 1 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-1.jpg" alt="Portfolio Item 1" class="w-full h-64 object-cover">
-          </div>
-          <!-- Portfolio Item 2 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-3.jpg" alt="Portfolio Item 2" class="w-full h-64 object-cover">
-          </div>
-          <!-- Portfolio Item 3 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-5.jpg" alt="Portfolio Item 3" class="w-full h-64 object-cover">
-          </div>
-          <!-- Portfolio Item 4 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-6.jpg" alt="Portfolio Item 4" class="w-full h-64 object-cover">
-          </div>
-          <!-- Portfolio Item 5 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-2.jpg" alt="Portfolio Item 5" class="w-full h-64 object-cover">
-          </div>
-          <!-- Portfolio Item 6 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="../imgs/folio-4.jpg" alt="Portfolio Item 6" class="w-full h-64 object-cover">
+    <div class="w-full col-span-1 relative">
+      <img src="../imgs/folio-6.jpg" alt="Image 1" class="w-full h-auto object-cover rounded-lg">
+      <div class="absolute inset-0 bg-red-600 bg-opacity-90 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+          <div class="text-white text-xl font-bold mb-4">Image Title 1</div>
+          <div class="flex space-x-4">
+            <!-- Magnifying Glass Icon -->
+            <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+              <img src="../icons/zoom-in.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm0 0v5m0 0H9m6 0h-6" />
+              </img>
+            </a>
+            <!-- Link Icon -->
+            <a href="#" class="text-white bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-50 transition">
+              <img src="../icons/link.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M17 16v-4a4 4 0 00-8 0v4M21 16h-6m-6 0H3" />
+              </img>
+            </a>
           </div>
       </div>
   </div>
-</section>
-</body>
+        
+        <!-- Add similar sections for the other images as needed -->
+        
+      </div>
+  </section>
+  
+    <!-- End portfolio Section -->
+     
+    <!-- Start team Section -->
+     
+    <!-- End team Section -->
+
+    <!-- Start fun fucts Section -->
+     
+    <!-- End fun fucts Section -->
+
+    <!-- Start clients says Section -->
+     
+    <!-- End clients says Section -->
+
+    <!-- Start blog section -->
+    <section class="container lg:w-9/12 mx-auto">
+      <div class="text-center mb-7">
+        <!-- Services Header-->
+        <h4 class="font-thin text-gray-400">News Feeds</h4>
+        <h1 class="font-bold text-3xl text-gray-700 pb-7">Our Blog</h1>
+      </div>
+      <div class="flex items-center justify-center container mx-auto">
+        <!-- blog parent -->
+        <div class="grid grid-cls-1 gap-5 md:grid-cols-3">
+          <!-- grid -->
+          <div
+            class="flex flex-col bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2"
+          >
+            <!-- single box -->
+            <img class="w-auto rounded" src="../imgs/blog-1.jpg" alt="blog" />
+            <div class="flex justify-center mt-5 mb-5">
+              <img src="../icons/b1.svg" alt="chat icon" />
+              <span class="ml-3">123</span>
+              <div class="ml-5 mr-5"></div>
+              <img src="../icons/b2.svg" alt="eye icon" />
+              <span class="ml-3">123</span>
+            </div>
+            <h2 class="font-bold text-2xl text-gray-600 mb-5">
+              Possimusaliquam veniam
+            </h2>
+            <p class="text-gray-500 tracking-wide mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae laudantium dolor nisi obcaecati, non laboriosam
+              asperiores doloremque tempora repellendus iure!
+            </p>
+            <a class="text-red-600 tracking-wide text-xl" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="flex flex-col bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2"
+          >
+            <!-- single box -->
+            <img class="w-auto rounded" src="../imgs/blog-2.jpg" alt="blog" />
+            <div class="flex justify-center mt-5 mb-5">
+              <img src="../icons/b1.svg" alt="chat icon" />
+              <span class="ml-3">434</span>
+              <div class="ml-5 mr-5"></div>
+              <img src="../icons/b2.svg" alt="eye icon" />
+              <span class="ml-3">987</span>
+            </div>
+            <h2 class="font-bold text-2xl text-gray-600 mb-5">
+              Repudiandae laudantium
+            </h2>
+            <p class="text-gray-500 tracking-wide mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae laudantium dolor nisi obcaecati, non laboriosam
+              asperiores doloremque tempora repellendus iure!
+            </p>
+            <a class="text-red-600 tracking-wide text-xl" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="flex flex-col bg-white rounded border shadow-xl p-5 mb-8 ml-2 mr-2"
+          >
+            <!-- single box -->
+            <img class="w-auto rounded" src="../imgs/blog-3.jpg" alt="blog" />
+            <div class="flex justify-center mt-5 mb-5">
+              <img src="../icons/b1.svg" alt="chat icon" />
+              <span class="ml-3">164</span>
+              <div class="ml-5 mr-5"></div>
+              <img src="../icons/b2.svg" alt="eye icon" />
+              <span class="ml-3">425</span>
+            </div>
+            <h2 class="font-bold text-2xl text-gray-600 mb-5">
+              Laboriosam asperiores
+            </h2>
+            <p class="text-gray-500 tracking-wide mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae laudantium dolor nisi obcaecati, non laboriosam
+              asperiores doloremque tempora repellendus iure!
+            </p>
+            <a class="text-red-600 tracking-wide text-xl" href="#"
+              >Read More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End blog section -->
+
+    <!-- Start contact -->
+     
+    <!-- End contact -->
+
+    <!-- Start footer section -->
+    <div class="bg-[url('../imgs/section.jpg')] bg-cover bg-no-repeat">
+      <section
+        class="container pb-30 relative grid grid-cols-1 sm:grid-cols-3 gap-10 auto-cols-fr lg:w-9/12 mx-auto p-10"
+      >
+        <!-- <img src="images/section.jpg" alt="back-ground image" class="w-full h-full object-cover absolute top-0 left-0 mix-blend-overlay"> -->
+        <div>
+          <!-- column 1 -->
+          <h2 class="uppercase font-bold text-2xl text-white">about us</h2>
+          <hr class="my-6" />
+          <div class="flex items-center sm:flex-col md:flex-row">
+            <div class="">
+              <img class="w-10" src="../imgs//logo.png" alt="logo" />
+            </div>
+
+            <p class="capitalize font-bold text-xl text-gray-400 ml-4">
+              <a href="index.html">visionary creations</a>
+            </p>
+          </div>
+          <p class="text-gray-300 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            nobis fugit maxime deleniti minus optio accusamus, quam maiores
+            explicabo sunt.
+          </p>
+          <p class="text-gray-300 my-6">
+            Copyright 2024 &copy;
+            <span class="capitalize text-rose-500 ml-3 tracking-wider"
+              >lorenz cipher</span
+            >
+          </p>
+        </div>
+
+        <div>
+          <!-- column 2-->
+          <h2 class="uppercase font-bold text-2xl text-white">useful links</h2>
+          <hr class="my-6" />
+          <div class="flex list-none text-gray-300">
+            <div>
+              <!-- links 1 parent-->
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Testimonial</a></li>
+            </div>
+            <div class="grow ml-20">
+              <!-- links 2 parent-->
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- column 3-->
+          <h2 class="uppercase font-bold text-2xl text-white">contact info</h2>
+          <hr class="my-6" />
+          <p class="text-gray-300 tracking-wide">
+            Contact us and we'll get back to you within 24 hours.
+          </p>
+          <div class="flex items-center my-4">
+            <img src="../icons/location.svg" alt="location icon" />
+            <p class="grow ml-5 text-gray-300">
+              12345 Fake ST NoWhere AB Country
+            </p>
+          </div>
+          <div class="flex items-center mb-4">
+            <img src="../icons/email.svg" alt="email icon" />
+            <p class="grow ml-5 text-gray-300">info@website.com</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="../icons/face.svg" alt="facebook icon" />
+            <img src="../icons/twitter.svg" alt="twitter icon" />
+            <img src="../icons/googleplus.svg" alt="google plus icon" />
+            <img src="../icons/pintrest.svg" alt="pintrest icon" />
+            <img src="../icons/instagran.svg" alt="instagram icon" />
+            <img src="../icons/cast.svg" alt="cast icon" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End footer section -->
+  </body>
 </html>
