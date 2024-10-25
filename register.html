@@ -7,126 +7,110 @@
   <script src="../tailwind.js"></script>
 </head>
 <body>
-    <!-- Start Header Section -->
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-            <a href="#">
-              <img src="../imgs/logo.png" alt="Logo" class="h-10" />
-            </a>
-          </div>
-
-          <!-- Hamburger Icon for Mobile Menu -->
-          <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <!-- Desktop -->
-          <nav id="desktop-menu" class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            <a href="#contact" class="text-red-500 font-bold">Contact</a>
-          </nav>
-        </div>
-
-        <!-- Mobile -->
-        <nav id="mobile-menu" class="md:hidden">
-          <div class="space-y-1 p-4">
-            <a
-              href="#"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a
-              href="#team"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a
-              href="#blog"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            <a href="#contact" class="block text-red-500 font-bold">Contact</a>
-          </div>
-        </nav>
+    
+<!-- Start Header Section -->
+<header class="bg-white shadow-md relative z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="src/index.html">
+          <img src="../imgs/logo.png" alt="Logo" class="h-10" />
+        </a>
       </div>
-    </header>
-    <!-- End Header Section -->
 
-<div class="bg-gray-100 h-screen flex items-center justify-center">
+      <!-- Hamburger Icon for Sidebar Menu -->
+      <div class="md:hidden">
+        <button id="sidebar-toggle" class="text-gray-700 focus:outline-none">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav id="desktop-menu" class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="text-red-500 font-bold">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar for Mobile Menu -->
+    <div id="sidebar-menu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+      <div class="p-4 space-y-1">
+        <button id="sidebar-close" class="text-gray-700 focus:outline-none mb-4">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="block px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Contact</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebarMenu = document.getElementById("sidebar-menu");
+      const sidebarClose = document.getElementById("sidebar-close");
+
+      // Toggle the sidebar menu when the hamburger icon is clicked
+      sidebarToggle.addEventListener("click", function () {
+        sidebarMenu.classList.toggle("-translate-x-full");
+      });
+
+      // Close the sidebar menu when the close button is clicked
+      sidebarClose.addEventListener("click", function () {
+        sidebarMenu.classList.add("-translate-x-full");
+      });
+    });
+  </script>
+</header>
+<!-- End Header Section -->
+
+<div class="p-5 bg-gray-100 h-screen flex items-center justify-center">
     
   <div class="w-full max-w-sm bg-white shadow-md rounded-lg p-8">
-    <h1 class="text-2xl font-bold text-center mb-6">Register</h1>
+    <h1 class="text-2xl font-bold text-center mb-6">Sign-up</h1>
 
     <form action="#" method="POST" class="space-y-5">
       <!-- Email -->
       <div>
-        <label for="email" class="block text-sm font-medium">User</label>
+        <label for="email" class="block text-sm font-medium">Name</label>
         <input type="text" id="user" name="user" required
           class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent">
       </div>
@@ -136,14 +120,14 @@
           class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent">
       </div>
       <div>
-        <label for="email" class="block text-sm font-medium">Phone Number</label>
-        <input type="tel" id="number" name="number" required
+        <label for="password" class="block text-sm font-medium ">Password</label>
+        <input type="password" id="password" name="password" required
           class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent">
       </div>
 
       <!-- Password -->
       <div>
-        <label for="password" class="block text-sm font-medium ">Password</label>
+        <label for="password" class="block text-sm font-medium ">Confirm Password</label>
         <input type="password" id="password" name="password" required
           class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent">
       </div>
@@ -157,9 +141,8 @@
       </div>
 
       <!-- Forgot Password & Sign Up -->
-      <div class="flex justify-between text-sm">
-        <a href="#" class="text-indigo-600 hover:underline">Forgot your password?</a>
-        <a href="#" class="text-indigo-600 hover:underline">Create an account</a>
+      <div class="flex justify-center text-sm">
+        <a href="login.html" class="text-indigo-600 hover:underline">already have an account?</a>
       </div>
     </form>
   </div>
