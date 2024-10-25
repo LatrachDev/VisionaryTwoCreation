@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,116 +17,106 @@
     </style>
   </head>
   <body>
-    <!-- Start Header Section -->
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-            <a href="#">
-              <img src="../imgs/logo.png" alt="Logo" class="h-10" />
-            </a>
-          </div>
 
-          <!-- Hamburger Icon for Mobile Menu -->
-          <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
-          </div>
 
-          <!-- Desktop -->
-          <nav id="desktop-menu" class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            <a href="#contact" class="text-red-500 font-bold">Contact</a>
-          </nav>
-        </div>
-
-        <!-- Mobile -->
-        <nav id="mobile-menu" class="md:hidden">
-          <div class="space-y-1 p-4">
-            <a
-              href="#"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a
-              href="#team"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a
-              href="#blog"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            <a href="#contact" class="block text-red-500 font-bold">Contact</a>
-          </div>
-        </nav>
+<!-- Start Header Section -->
+<header class="bg-white shadow-md relative z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#">
+          <img src="../imgs/logo.png" alt="Logo" class="h-10" />
+        </a>
       </div>
-    </header>
-    <!-- End Header Section -->
+
+      <!-- Hamburger Icon for Sidebar Menu -->
+      <div class="md:hidden">
+        <button id="sidebar-toggle" class="text-gray-700 focus:outline-none">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav id="desktop-menu" class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="text-gray-700 hover:text-red-500 font-medium">Contact</a>
+        <a href="../login.html" class="text-red-500 font-bold">Login</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar for Mobile Menu -->
+    <div id="sidebar-menu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+      <div class="p-4 space-y-1">
+        <button id="sidebar-close" class="text-gray-700 focus:outline-none mb-4">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="block text-gray-700 hover:text-red-500 font-medium">Contact</a>
+        <a href="../login.html" class="block text-red-700 hover:text-red-500 font-medium">Login</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebarMenu = document.getElementById("sidebar-menu");
+      const sidebarClose = document.getElementById("sidebar-close");
+
+      // Toggle the sidebar menu when the hamburger icon is clicked
+      sidebarToggle.addEventListener("click", function () {
+        sidebarMenu.classList.toggle("-translate-x-full");
+      });
+
+      // Close the sidebar menu when the close button is clicked
+      sidebarClose.addEventListener("click", function () {
+        sidebarMenu.classList.add("-translate-x-full");
+      });
+    });
+  </script>
+</header>
+<!-- End Header Section -->
+
+
+    
 
     <!-- Start Hero Section -->
     <section
@@ -158,9 +148,9 @@
     <!-- Start About Section -->
     <section
       id="about"
-      class="container sm:flex shadow-lg text-center w-9/12 mx-auto p-5 mt-10"
+      class="container mb-16 bg-white sm:flex shadow-lg  text-center w-11/12 mx-auto  mt-10 sm:-translate-y-32 md:p-0"
     >
-      <div class="aboutSection">
+      <div class="aboutSection border p-5">
         <img
           class="mx-auto my-5"
           src="../icons/UxUi-Icon.svg"
@@ -173,7 +163,7 @@
         </p>
       </div>
 
-      <div class="aboutSection">
+      <div class="aboutSection border p-5">
         <img
           class="mx-auto my-5"
           src="../icons/webDev-Icon.svg"
@@ -186,7 +176,7 @@
         </p>
       </div>
 
-      <div class="aboutSection">
+      <div class="aboutSection border p-5">
         <img
           class="mx-auto my-5"
           src="../icons/appDesign-Icon.svg"
@@ -202,18 +192,17 @@
     <!-- End About Section -->
     
     <!-- Start Awesome Work Section -->
-    <section class="container p-5 mx-auto sm:flex mt-20 md:w-9/12">
-      <div class="contents sm:w-6/12">
+    <section class="container p-5 mx-auto sm:flex -mt-16 mb-16 md:w-9/12">
+      <div class="md:my-auto">
         <img
-          class="mx-auto my-auto w-9/12 sm:w-5/12 md:w-6/12 md:h-64 object-cover"
+          class="w-96 border-4"
           src="../imgs/about.jpg"
-          alt="An image showcasing our work"
-        />
+          alt="An image showcasing our work">
       </div>
-      <div class="w-9/12 mx-auto sm:w-6/12">
+      <div class="w-9/12 sm:w-6/12">
         <h3 class="text-xl font-light my-5 pl-0 sm:pl-5">
           We Create <br />
-          <span class="font-bold text-2xl">Awesome Work</span>
+          <span class="font-bold text-2xl text-gray-600">Awesome Work</span>
         </h3>
         <p class="my-5 pl-0 sm:pl-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta
@@ -232,11 +221,47 @@
     <!-- End Awesome Work Section -->
 
     <!-- Start what others Section -->
-     
+    <div class="bg-neutral-900  bg-[url('../imgs/footerBg.jpg')] bg-center">
+      <section class="container w-full p-20 lg:mx-auto mb-10">
+        <div class="text-center mb-7">
+            <h4 class="font-thin text-gray-400">We See</h4>
+            <h2 class="font-bold text-3xl text-white pb-7">What Others Don't See</h2>
+        </div>
+        <div class="flex flex-col justify-center items-center sm:flex-row">
+            <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
+                <img class="mx-auto mt-5" src="../icons/planning.svg" alt="Planning icon">
+                <h3 class="mt-3 text-white font-semibold">Planning</h3>
+            </div>
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
+            
+            
+            <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
+              <img class="mx-auto mt-5" src="../icons/mockup.svg" alt="Mockup icon">
+              <h3 class="mt-3 text-white font-semibold">Mockup</h3>
+            </div>
+            
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
+            
+            
+            <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
+              <img class="mx-auto mt-5" src="../icons/develop.svg" alt="Develope icon">
+              <h3 class="mt-3 text-white font-semibold">Develope</h3>
+            </div>
+            
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
+            
+
+            <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
+                <img class="mx-auto mt-5" src="../icons/provide.svg" alt="Provide icon">
+                <h3 class="mt-3 text-white font-semibold">Provide</h3>
+            </div>
+        </div>
+    </section>
+    </div>
     <!-- End what others Section -->
 
     <!-- Start Services -->
-    <section class="container lg:w-9/12 mx-auto">
+    <section id="service" class="container lg:w-9/12 mx-auto">
       <div class="text-center mb-7">
         <!-- Services Header-->
         <h4 class="font-thin text-gray-400">Makes Happen</h4>
@@ -343,24 +368,425 @@
     </section>
     <!-- End Services -->
 
-    <!-- Start portfolio Section -->
-     
-    <!-- End portfolio Section -->
+
+
+<!-- Start portfolio Section -->
+<div id="portfolio" class="w-auto mx-auto">
+  <div class="text-center mx-auto mb-16 w-[64%]">
+    <p class="text-neutral-400">Our Awesome Works</p>
+    <h1 class="font-bold text-3xl text-gray-600">Our Portfolio</h1>
+  </div>
+  <div>
+    <div class="grid grid-cols-3 lg:mx-auto gap-5 lg:w-[64%] md:mx-0 md:w-[100%] md:grid-cols-3 max-md:grid-cols-1 sm:mx-14">
+      <div class="row-span-2 relative group aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-1.jpg" alt="" class="transition-opacity duration-30 rounded">
+        <div class="md:h-[86%] sm:h-[100%] absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold mt-5 text-white transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-1.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-1 aspect-w-3 aspect-h-2">
+        <img src="../imgs/folio-3.jpg" alt="" class="rounded">
+        <div class="animation2 absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="titleanim font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-3.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-2 aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-5.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-5.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-3 aspect-w-3 aspect-h-5">
+        <img src="../imgs/folio-4.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-4.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-3  md:-top-[12%] sm:top-0 aspect-w-3 aspect-h-5">
+        <img src="../imgs/folio-2.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-2.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-2 aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-6.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-6.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End portfolio Section -->
+
+
+
+
+<!-- Modal for full-size image -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+  <div class="relative">
+    <img id="modalImage" src="" alt="Full Size Image" class="rounded">
+    <button onclick="closeImageModal()" class="absolute top-2 right-2 text-white text-2xl">&times;</button>
+  </div>
+</div>
+
+<script>
+  // Show full-size image in modal
+  function showImageModal(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+
+  // Hide the full-size image modal
+  function closeImageModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+
+<!-- End Portfolio Section -->
+
      
     <!-- Start team Section -->
-     
+     <section id="team" class="container lg:w-9/12 mx-auto mb-10">
+        <div class="text-center">
+            <h4 class="font-thin text-gray-400">Meet With</h4>
+            <h1 class="font-bold text-3xl text-gray-700 pb-7">Our Angels</h1>
+        </div>
+        <div class="grid sm:grid-cols-3">
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3 ">
+              <div class="mx-auto">
+                <img src="../imgs/avatar.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                <h4 class="text-rose-600 font-bold mt-3">FOUNDER</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Matthew Davis</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3">
+              <div class="mx-auto">
+                <img src="../imgs/avatar-1.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                
+                <h4 class="text-rose-600 font-bold mt-3">CEO</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Barbara Ross</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3">
+              <div class="mx-auto">
+                <img src="../imgs/avatar-2.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                <h4 class="text-rose-600 font-bold mt-3">Designer</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Karen Perry</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3">
+              <div class="mx-auto">
+                <img src="../imgs/avatar-3.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                <h4 class="text-rose-600 font-bold mt-3">App Designer</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Ashley Diaz</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3">
+              <div class="mx-auto">
+                <img src="../imgs/avatar-4.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                <h4 class="text-rose-600 font-bold mt-3">Developer</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Edward Harris</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+            <div class="text-center p-5 w-10/12 mx-auto shadow-lg my-3">
+              <div class="mx-auto">
+                <img src="../imgs/avatar-5.jpg" alt="Avatar" class="w-full h-full">
+              </div>
+                <h4 class="text-rose-600 font-bold mt-3">Photographer</h4>
+                <h3 class="font-bold text-lg text-gray-600 mt-3">Brian Scott</h3>
+                <p class="pb-6 text-gray-400 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, possimus illum. Nihil inventore suscipit culpa.</p>
+                <div class="flex justify-center gap-5">
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="../icons/Link1.svg" alt="Facebook">
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                      <img src="../icons/Link2.svg" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.google.com/" target="_blank">
+                      <img src="../icons/Link3.svg" alt="LinkBox">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="../icons/Link4.svg" alt="Twitter">
+                  </a>
+                </div>
+            </div>
+            
+        </div>
+     </section>
     <!-- End team Section -->
 
     <!-- Start fun fucts Section -->
-     
+
+    <div id="testimonial" class="bg-gray-950">
+      <div class="container lg:w-9/12 mx-auto">
+        <div class="text-center p-5">
+            <h4 class="font-thin text-gray-400">we are awesome</h4>
+            <h1 class="font-bold text-3xl text-white pb-7">Some Fun Fucts</h1>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 ">
+          
+          <div class="p-5 mb-8  mx-2 flex flex-col justify-center items-center">
+              <img class="w-5/12" src="../icons/iconWin.svg" alt="">
+              <p class="text-white font-bold mt-5">100+</p>
+              <p class="text-white">Awards Won</p>
+          </div>
+        
+          <div class="p-5 mb-8  mx-2 flex flex-col justify-center items-center">
+              <img class="w-5/12" src="../icons/IconHappy.svg" alt="">
+              <p class="text-white font-bold mt-5">100+</p>
+              <p class="text-white">Happy Clients</p>
+          </div>
+
+
+          <div class="p-5 mb-8  mx-2 flex flex-col justify-center items-center">
+              <img class="w-5/12" src="../icons/IconProject.svg" alt="">
+              <p class="text-white font-bold mt-5">100+</p>
+              <p class="text-white text-center">Project Completed</p>
+          </div>
+
+          <div class="p-5 mb-8  mx-5 flex flex-col justify-center items-center">
+              <img class="w-5/12" src="../icons/IconComments.svg" alt="">
+              <p class="text-white font-bold mt-5">15K+</p>
+              <p class="text-white">Comments</p>
+          </div>
+
+        </div>
+    </div>
+    </div>
+
     <!-- End fun fucts Section -->
 
     <!-- Start clients says Section -->
-     
+    <div class="container mx-auto mb-16 flex items-center justify-center">
+      <div class="bg-white p-8 rounded-lg sm:w-9/12">
+        <div class="text-center mb-20">
+          <h4 class="text-gray-400 text-sm">Testimonial</h4>
+          <h2 class="text-3xl font-bold text-gray-800">What Our Clients Says</h2>
+        </div>
+        
+
+        <div class="sm:flex">
+          <div class="flex  bg-gray-50 p-6 rounded-md shadow-md mb-5 sm:mb-0 sm:mr-5">
+            <img 
+              class="-translate-x-1/2 translate-y-1/2 my-auto absolute w-20 h-20 rounded-full object-cover border-4 border-white sm:translate-y-1/2 md:translate-y-20 lg:translate-y-1/2"
+              src="../imgs/avatar.jpg" 
+              alt="Client photo">
+            
+            <!-- Testimonial Text -->
+            <div class="pl-10">
+              <p class="text-gray-500 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.
+              </p>
+              <!-- Client Name -->
+              <h3 class="text-gray-800 font-semibold">Richard Reb</h3>
+            </div>
+          </div>
+  
+          <div class="flex  bg-gray-50 p-6 rounded-md shadow-md ">
+            <img 
+              class="-translate-x-1/2 translate-y-1/2 my-auto absolute w-20 h-20 rounded-full object-cover border-4 border-white sm:translate-y-1/2 md:translate-y-20 lg:translate-y-1/2"
+              src="../imgs/avatar-4.jpg" 
+              alt="Client photo">
+            
+            <!-- Testimonial Text -->
+            <div class="pl-10">
+              <p class="text-gray-500 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.
+              </p>
+              <!-- Client Name -->
+              <h3 class="text-gray-800 font-semibold">John Doe</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="relative  bg-gray-50 p-6 rounded-md shadow-md">
+          <img 
+            class="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full object-cover border-4 border-white"
+            src="../imgs/avatar-4.jpg" 
+            alt="Client photo">
+          
+          <p class="text-gray-500 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.
+          </p>
+          <h3 class="text-gray-800 font-semibold">John Doe</h3>
+        </div> -->
+      </div>
+    </div>
+    
     <!-- End clients says Section -->
 
+    <!-- start video container section -->
+    <div class="h-60 bg-[url('../imgs/footerBg.jpg')] mb-10" onclick="showVideo()">
+      <div class="pt-10">
+          <div class="flex flex-col items-center justify-center">
+              <div class="flex flex-col items-center justify-center  w-20 h-20 ">
+                  <img src="/icons/videoPlayer.svg" alt="video play icon">
+              </div>
+          </div>
+          <p class="text-center mt-6 font-bold text-white text-2xl">See our intro video</p>
+      </div>
+    </div>
+
+    <!-- End video section -->
+
+
+
+  <!-- Start Hidden iframe yt -->
+   <div id="videoOverlay" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
+    <iframe src="https://www.youtube-nocookie.com/embed/UPNkOwabRDY?autoplay=1&loop=1&playlist=UPNkOwabRDY" width="560" height="315" title="Embed ANY YouTube Video and Autoplay it in HTML" frameborder="0" allowfullscreen></iframe>
+    <!-- Close button -->
+     <button onclick="hidenVideo()" class="absolute top-5 right-5 text-white text-3xl font-bold">&times;</button>
+   </div>
+  <!-- End Hidden iframe yt -->
+
+  <!-- Start java script -->
+   <script>
+    // show video overlay
+    function showVideo()
+    {
+      document.getElementById('videoOverlay').classList.remove('hidden');
+    }
+
+    // hide the video
+    function hidenVideo()
+    {
+      document.getElementById('videoOverlay').classList.add('hidden');
+    }
+   </script>
+  <!-- End java script -->
+
     <!-- Start blog section -->
-    <section class="container lg:w-9/12 mx-auto">
+    <section id="blog" class="container lg:w-9/12 mx-auto mt-10">
       <div class="text-center mb-7">
         <!-- Services Header-->
         <h4 class="font-thin text-gray-400">News Feeds</h4>
@@ -448,14 +874,13 @@
     <!-- End blog section -->
 
     <!-- Start contact -->
-         <!-- srtart contact -->
-    <section class="mt-20">
-      <div class="grid lg:grid-cols-[1fr_2fr] w-9/12 mx-auto ">
-          <div class="hidden lg:block ml-10 pl-5"><!-- left side -->
-              <p class="text-gray-400">get here</p>
+    <section id="contact" class="mt-20">
+      <div class="grid lg:grid-cols-[1fr_2fr] w-9/12 mx-auto bg-white shadow-md mb-10 ">
+          <div class="hidden lg:block ml-10 pl-5 mr-6"><!-- left side -->
+              <p class="text-gray-400 capitalize">get here</p>
               <h2 class="capitalize text-3xl font-bold text-gray-700">contact us</h2>
               <div class="flex mt-2">
-                  <img src="../icons/Icon6.svg" alt="location icon" class="">
+                  <a href="https://maps.app.goo.gl/eHKdhPke9cWYNwyUA" target="_blank"><img src="../icons/Icon6.svg" alt="location icon" class=""></a>
                   <div class="ml-2">
                       <h4 class="font-bold text-xl text-gray-700">location</h4>
                       <p>12345 fake ST Nowher AB country</p>
@@ -463,7 +888,7 @@
               </div>
               <hr class="my-3">
               <div class="flex mt-2">
-                  <img src="../icons/Icon7.svg" alt="phone icon">
+                <a href="https://web.whatsapp.com/"><img src="../icons/Icon7.svg" alt="phone icon"></a>
                   <div class="ml-3">
                       <h4 class="font-bold text-xl text-gray-700">Phone Number</h4>
                       <p>(123) 456-789</p>
@@ -471,7 +896,7 @@
               </div>
               <hr class="my-3">
               <div class="flex mt-2">
-                  <img src="../icons/Icon8.svg" alt="email icon">
+                <a href="#"><img src="../icons/Icon8.svg" alt="email icon"></a>
                   <div class="ml-3">
                       <h4 class="font-bold text-xl text-gray-700">Email Address</h4>
                       <p>info@example.com</p>
@@ -479,7 +904,7 @@
               </div>
               <hr class="my-3">
               <div class="flex mt-2">
-                  <img src="../icons/Icon9.svg" alt="email icon">
+                <a href="#"><img src="../icons/contactWorld.svg" alt="email icon"></a>
                   <div class="ml-3">
                       <h4 class="font-bold text-xl text-gray-700">example.com</h4>
                       <p>info@website.com</p>
@@ -493,10 +918,10 @@
                   <h2 class= "capitalize text-3xl font-bold text-gray-700">get in touch</h2>
               </div>
               <form action="#" class="ml-4 space-y-4 mb-10">
+                  <input type="text" placeholder="Enter your name" 
+                  class="border-2 w-11/12 mx-auto mt-6 p-2 rounded-md text-xl"> 
                   <input type="email" placeholder="Enter email" 
-                  class="border-2 w-11/12 mx-auto mt-6 p-2 rounded-md text-xl sm:p-4"> 
-                  <input type="password" placeholder="Password"
-                  class="border-2 w-11/12 p-2 rounded-md text-xl">
+                  class="border-2 w-11/12 mx-auto mt-6 p-2 rounded-md text-xl"> 
                   <textarea name="" id="" rows="6" class="border-2 rounded-md w-11/12"></textarea>
                   <button type="button" class="text-white w-11/12 p-2  bg-rose-500 rounded">Send Message</button>
               </form>
@@ -547,15 +972,15 @@
           <div class="flex list-none text-gray-300">
             <div>
               <!-- links 1 parent-->
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Testimonial</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonial">Testimonial</a></li>
             </div>
             <div class="grow ml-20">
               <!-- links 2 parent-->
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#blog">Blog</a></li>
               <li><a href="#">Faq</a></li>
               <li><a href="#">Privacy</a></li>
               <li><a href="#">Policy</a></li>
@@ -580,12 +1005,12 @@
             <p class="grow ml-5 text-gray-300">info@website.com</p>
           </div>
           <div class="flex items-center gap-4">
-            <img src="../icons/face.svg" alt="facebook icon" />
-            <img src="../icons/twitter.svg" alt="twitter icon" />
-            <img src="../icons/googleplus.svg" alt="google plus icon" />
-            <img src="../icons/pintrest.svg" alt="pintrest icon" />
-            <img src="../icons/instagran.svg" alt="instagram icon" />
-            <img src="../icons/cast.svg" alt="cast icon" />
+            <a href="https://www.facebook.com/" target="_blank"><img src="../icons/face.svg" alt="facebook icon" /></a>
+            <a href="https://x.com/login?mx=2" target="_blank"><img src="../icons/twitter.svg" alt="twitter icon" /></a>
+            <a href="https://en.wikipedia.org/wiki/Google%2B" target="_blank"><img src="../icons/googleplus.svg" alt="google plus icon" /></a>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="../icons/pintrest.svg" alt="pintrest icon" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../icons/instagran.svg" alt="instagram icon" /></a>
+            <a href="https://www.netflix.com/browse" target="_blank"><img src="../icons/cast.svg" alt="cast icon" /></a>
           </div>
         </div>
       </section>
