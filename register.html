@@ -17,13 +17,13 @@
     <div class="flex justify-between items-center py-4">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="index.html">
+        <a href="#">
           <img src="imgs/logo.png" alt="Logo" class="h-10" />
         </a>
       </div>
 
-      <!-- Hamburger Icon for Sidebar Menu -->
-      <div class="md:hidden">
+      <!-- Hamburger Icon for Sidebar Menu (Visible for tablets and smaller devices) -->
+      <div class="lg:hidden">
         <button id="sidebar-toggle" class="text-gray-700 focus:outline-none">
           <svg
             class="h-6 w-6"
@@ -42,8 +42,8 @@
         </button>
       </div>
 
-      <!-- Desktop Menu -->
-      <nav id="desktop-menu" class="hidden md:flex space-x-8">
+      <!-- Desktop Menu (Visible for larger devices) -->
+      <nav id="desktop-menu" class="hidden lg:flex space-x-8">
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">About</a>
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
@@ -52,12 +52,12 @@
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
         <a href="index.html" class="text-gray-700 hover:text-red-500 font-medium">Contact</a>
-        <a href="index.html" class="text-red-500 font-bold">Login</a>
+        <a href="login.html" class="text-red-500 font-bold">Login</a>
       </nav>
     </div>
 
-    <!-- Sidebar for Mobile Menu -->
-    <div id="sidebar-menu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+    <!-- Sidebar for Mobile and Tablet Menu -->
+    <div id="sidebar-menu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-50">
       <div class="p-4 space-y-1">
         <button id="sidebar-close" class="text-gray-700 focus:outline-none mb-4">
           <svg
@@ -75,14 +75,14 @@
             />
           </svg>
         </button>
-        <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
-        <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
-        <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
-        <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
-        <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
-        <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
-        <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
-        <a href="#contact" class="block text-gray-700 hover:text-red-500 font-medium">Contact</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="index.html" class="block text-gray-700 hover:text-red-500 font-medium">Contact</a>
         <a href="login.html" class="block text-red-700 hover:text-red-500 font-medium">Login</a>
       </div>
     </div>
