@@ -17,120 +17,104 @@
     </style>
   </head>
   <body>
-    <!-- Start Header Section -->
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-            <a href="#">
-              <img src="../imgs/logo.png" alt="Logo" class="h-10" />
-            </a>
-          </div>
 
-          <!-- Hamburger Icon for Mobile Menu -->
-          <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
-          </div>
 
-          <!-- Desktop -->
-          <nav id="desktop-menu" class="hidden md:flex space-x-8">
-            <a href="#" class="text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a href="#team" class="text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            <a href="#contact" class="text-red-500 font-bold">Contact</a>
-
-          </nav>
-        </div>
-
-        <!-- Mobile -->
-        <nav id="mobile-menu" class="md:hidden">
-          <div class="space-y-1 p-4">
-            <a
-              href="#"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >About</a
-            >
-            <a
-              href="#service"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Service</a
-            >
-            <a
-              href="#portfolio"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Portfolio</a
-            >
-            <a
-              href="#team"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Team</a
-            >
-            <a
-              href="#testimonial"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Testimonial</a
-            >
-            <a
-              href="#blog"
-              class="block text-gray-700 hover:text-red-500 font-medium"
-              >Blog</a
-            >
-            
-            <a
-            href="#service"
-            class="px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Our </a>
-          </div>
-        </nav>
+<!-- Start Header Section -->
+<header class="bg-white shadow-md relative z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#">
+          <img src="../imgs/logo.png" alt="Logo" class="h-10" />
+        </a>
       </div>
-    </header>
-    <!-- End Header Section -->
+
+      <!-- Hamburger Icon for Sidebar Menu -->
+      <div class="md:hidden">
+        <button id="sidebar-toggle" class="text-gray-700 focus:outline-none">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav id="desktop-menu" class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="text-red-500 font-bold">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar for Mobile Menu -->
+    <div id="sidebar-menu" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+      <div class="p-4 space-y-1">
+        <button id="sidebar-close" class="text-gray-700 focus:outline-none mb-4">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <a href="#" class="block text-gray-700 hover:text-red-500 font-medium">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-red-500 font-medium">About</a>
+        <a href="#service" class="block text-gray-700 hover:text-red-500 font-medium">Service</a>
+        <a href="#portfolio" class="block text-gray-700 hover:text-red-500 font-medium">Portfolio</a>
+        <a href="#team" class="block text-gray-700 hover:text-red-500 font-medium">Team</a>
+        <a href="#testimonial" class="block text-gray-700 hover:text-red-500 font-medium">Testimonial</a>
+        <a href="#blog" class="block text-gray-700 hover:text-red-500 font-medium">Blog</a>
+        <a href="#contact" class="block px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600">Contact</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebarMenu = document.getElementById("sidebar-menu");
+      const sidebarClose = document.getElementById("sidebar-close");
+
+      // Toggle the sidebar menu when the hamburger icon is clicked
+      sidebarToggle.addEventListener("click", function () {
+        sidebarMenu.classList.toggle("-translate-x-full");
+      });
+
+      // Close the sidebar menu when the close button is clicked
+      sidebarClose.addEventListener("click", function () {
+        sidebarMenu.classList.add("-translate-x-full");
+      });
+    });
+  </script>
+</header>
+<!-- End Header Section -->
+
+
+    
 
     <!-- Start Hero Section -->
     <section
@@ -382,105 +366,132 @@
     </section>
     <!-- End Services -->
 
-    <!-- Start portfolio Section -->
-    <div id="portfolio" class="w-auto mx-auto">
-      <div class="text-center mx-auto mb-16 w-[64%]">
-          <p class="text-neutral-400">Our Awesome Works</p>
-          <h1 class="font-bold text-3xl text-gray-600">Our Portfolio</h1>
-      </div>
-      <div>
-          <div class=" grid grid-cols-3 lg:mx-auto gap-5 lg:w-[64%] md:mx-0 md:w-[100%] md:grid-cols-3 max-md:grid-cols-1 sm:mx-14">
-              <div class="row-span-2 relative group ">
-                  <img src="../imgs/folio-1.jpg" alt="" class="transition-opacity duration-30 rounded">
-                  <div class="md:h-[86%] sm:h-[100%] absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="font-bold mt-5 text-white transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                        <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                          <img src="../icons/link.png" alt="">
-                        </button>
-                        <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                          <img src="../icons/zoom-in.png" alt="">  
-                        </button>                        
-                    </div>
-                  </div>
-              </div>
-              <div class="relative group row-span-1">
-                  <img src="../imgs/folio-3.jpg" alt="" class="rounded">
-                  <div class="animation2 absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="titleanim font-bold  text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/link.png" alt="">
-                          </button>
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/zoom-in.png" alt="">  
-                          </button>                        
-                      </div>
-                  </div>
-              </div>
-              <div class="relative group row-span-2">
-                  <img src="../imgs/folio-5.jpg" alt="" class="rounded">
-                  <div class=" absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="font-bold  text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/link.png" alt=""> 
-                          </button>
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">                               
-                            <img src="../icons/zoom-in.png" alt="">
-                          </button>                        
-                      </div>
-                  </div>
-              </div>
-              
-              
-              <div class="relative group row-span-3">
-                  <img src="../imgs/folio-4.jpg" alt="" class="rounded">
-                  <div class=" absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="font-bold  text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/link.png" alt=""> 
-                          </button>
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">                              
-                            <img src="../icons/zoom-in.png" alt="">
-                          </button>                        
-                      </div>
-                  </div>
-              </div>
-              <div class="relative group row-span-3 relative md:-top-[12%] sm:top-0">
-                  <img src="../imgs/folio-2.jpg" alt="" class="rounded">
-                  <div class=" absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="font-bold  text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/link.png" alt="">
-                          </button>
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">                           
-                             <img src="../icons/zoom-in.png" alt="">
-                          </button>                        
-                      </div>
-                  </div>
-              </div>
-              <div class="relative group row-span-2">
-                  <img src="../imgs/folio-6.jpg" alt="" class="rounded">
-                  <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 transition-opacity duration-1000 bg-[#FF214F] rounded">
-                      <h2 class="font-bold  text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
-                      <div class="flex items-center justify-center gap-2">
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
-                            <img src="../icons/link.png" alt=""> 
-                          </button>
-                          <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">                               
-                            <img src="../icons/zoom-in.png" alt="">
-                          </button>                        
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+
+<!-- Start portfolio Section -->
+<div id="portfolio" class="w-auto mx-auto">
+  <div class="text-center mx-auto mb-16 w-[64%]">
+    <p class="text-neutral-400">Our Awesome Works</p>
+    <h1 class="font-bold text-3xl text-gray-600">Our Portfolio</h1>
   </div>
-  
-    <!-- End portfolio Section -->
+  <div>
+    <div class="grid grid-cols-3 lg:mx-auto gap-5 lg:w-[64%] md:mx-0 md:w-[100%] md:grid-cols-3 max-md:grid-cols-1 sm:mx-14">
+      <div class="row-span-2 relative group aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-1.jpg" alt="" class="transition-opacity duration-30 rounded">
+        <div class="md:h-[86%] sm:h-[100%] absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold mt-5 text-white transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-1.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-1 aspect-w-3 aspect-h-2">
+        <img src="../imgs/folio-3.jpg" alt="" class="rounded">
+        <div class="animation2 absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="titleanim font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-3.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-2 aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-5.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-5.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-3 aspect-w-3 aspect-h-5">
+        <img src="../imgs/folio-4.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-4.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-3  md:-top-[12%] sm:top-0 aspect-w-3 aspect-h-5">
+        <img src="../imgs/folio-2.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-2.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative group row-span-2 aspect-w-3 aspect-h-4">
+        <img src="../imgs/folio-6.jpg" alt="" class="rounded">
+        <div class="absolute inset-0 text-xl font-bold flex flex-col items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-1000 bg-[#FF214F] rounded">
+          <h2 class="font-bold text-white mt-5 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000">Project title</h2>
+          <div class="flex items-center justify-center gap-2">
+            <button class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <a target="_blank" href="https://www.linkedin.com/feed/"><img src="../icons/link.png" alt=""></a>
+            </button>
+            <button onclick="showImageModal('../imgs/folio-6.jpg')" class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform transition-opacity duration-1000 border-solid border-2 border-white p-2 rounded-full w-10 h-10 text-white flex items-center justify-center hover:text-rose-500 hover:bg-slate-300">
+              <img src="../icons/zoom-in.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End portfolio Section -->
+
+
+
+
+<!-- Modal for full-size image -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+  <div class="relative">
+    <img id="modalImage" src="" alt="Full Size Image" class="rounded">
+    <button onclick="closeImageModal()" class="absolute top-2 right-2 text-white text-2xl">&times;</button>
+  </div>
+</div>
+
+<script>
+  // Show full-size image in modal
+  function showImageModal(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+
+  // Hide the full-size image modal
+  function closeImageModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+
+<!-- End Portfolio Section -->
+
      
     <!-- Start team Section -->
      <section id="team" class="container lg:w-9/12 mx-auto mb-10">
