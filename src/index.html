@@ -242,7 +242,7 @@
                 <img class="mx-auto mt-5" src="../icons/planning.svg" alt="Planning icon">
                 <h3 class="mt-3 text-white font-semibold">Planning</h3>
             </div>
-            <div class="sm:mx-5 my-5"> <img src="../icons/IconArrow.svg" alt=""></div>
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
             
             
             <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
@@ -250,7 +250,7 @@
               <h3 class="mt-3 text-white font-semibold">Mockup</h3>
             </div>
             
-            <div class="mx-5"> <img src="../icons/IconArrow.svg" alt=""></div>
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
             
             
             <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
@@ -258,7 +258,7 @@
               <h3 class="mt-3 text-white font-semibold">Develope</h3>
             </div>
             
-            <div class="mx-5"> <img src="../icons/IconArrow.svg" alt=""></div>
+            <div class="sm:mx-5 my-5 rotate-90 md:rotate-0"> <img src="../icons/IconArrow.svg" alt=""></div>
             
 
             <div class="flex-col justify-center text-center items-center w-36 h-36 border-2 border-rose-500 rounded-full sm:w-48 md:h-28 lg:w-28">
@@ -681,17 +681,41 @@
     <!-- End clients says Section -->
 
     <!-- start video container section -->
-    <div class="h-60 bg-[url('../imgs/footerBg.jpg')] mb-10">
+    <div class="h-60 bg-[url('../imgs/footerBg.jpg')] mb-10" onclick="showVideo()">
       <div class="pt-10">
           <div class="flex flex-col items-center justify-center">
               <div class="flex flex-col items-center justify-center  w-20 h-20 ">
-                  <img src="/icons/videoPlayer.svg" alt="video play icon" calss="">
+                  <img src="/icons/videoPlayer.svg" alt="video play icon">
               </div>
           </div>
           <p class="text-center mt-6 font-bold text-white text-2xl capitalize">See our intro video</p>
       </div>
   </div>
   <!-- End video container section -->
+
+  <!-- Start Hidden iframe yt -->
+   <div id="videoOverlay" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
+    <iframe src="https://www.youtube-nocookie.com/embed/UPNkOwabRDY?autoplay=1&loop=1&playlist=UPNkOwabRDY" width="560" height="315" title="Embed ANY YouTube Video and Autoplay it in HTML" frameborder="0" allowfullscreen></iframe>
+    <!-- Close button -->
+     <button onclick="hidenVideo()" class="absolute top-5 right-5 text-white text-3xl font-bold">&times;</button>
+   </div>
+  <!-- End Hidden iframe yt -->
+
+  <!-- Start java script -->
+   <script>
+    // show video overlay
+    function showVideo()
+    {
+      document.getElementById('videoOverlay').classList.remove('hidden');
+    }
+
+    // hide the video
+    function hidenVideo()
+    {
+      document.getElementById('videoOverlay').classList.add('hidden');
+    }
+   </script>
+  <!-- End java script -->
 
     <!-- Start blog section -->
     <section id="blog" class="container lg:w-9/12 mx-auto">
